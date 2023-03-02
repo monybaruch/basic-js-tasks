@@ -45,7 +45,8 @@
 // BMI 18.5-24.9, the output should be "Your BMI is <bmi>, so you have a normal weight."
 
 // BMI >24.9, the output should be "Your BMI is <bmi>, so you are overweight."
-
+var yourWeight = prompt("enter your weight !");
+var yourHeight = prompt("enter your height !");
 var yourBmi = "";
 
 function bmiCalculator(myWeight, myHeight) {
@@ -60,6 +61,6 @@ function bmiCalculator(myWeight, myHeight) {
   } else {
     yourBmi = "Your BMI is " + bmi + " you are to skinny go eat some KFC";
   }
-  return console.log(yourBmi);
+  return alert(yourBmi);
 }
-bmiCalculator(200, 1.9);
+bmiCalculator(yourWeight, yourHeight);
