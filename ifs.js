@@ -84,21 +84,34 @@
 
 // 2000 ÷ 400 = 5 (Leap!)
 
-var leapYear = prompt("enter the year you want to check if it's a leap year! ");
+// let leapYear = prompt("enter the year you want to check if it's a leap year! ");
 
-function YearLeapCalculator(myYear) {
-  if (myYear % 4 === 0) {
-    if (myYear % 100 === 0) {
-      if (myYear % 400 === 0) {
-        alert("The year you chose is a leap year");
-      } else {
-        alert("The year you chose is not a leap year");
-      }
-    } else {
-      alert("The year you chose is a leap year");
-    }
+// function YearLeapCalculator(myYear) {
+//   if (myYear % 4 === 0) {
+//     if (myYear % 100 === 0) {
+//       if (myYear % 400 === 0) {
+//         alert("The year you chose is a leap year");
+//       } else {
+//         alert("The year you chose is not a leap year");
+//       }
+//     } else {
+//       alert("The year you chose is a leap year");
+//     }
+//   } else {
+//     alert("The year you chose is not a leap year");
+//   }
+// }
+// YearLeapCalculator(leapYear);
+
+checkUpper();
+function checkUpper() {
+  let x = prompt("enter your name please!");
+  let y = x.slice(0, 1).toUpperCase() + x.slice(1, x.length).toLowerCase();
+  if (x == y) {
+    alert("you entered a valid name you can continue");
   } else {
-    alert("The year you chose is not a leap year");
+    alert(
+      "Please and your name again with an upperCase in the beginnig and the rest in lowerCase"
+    );
   }
 }
-YearLeapCalculator(leapYear);
